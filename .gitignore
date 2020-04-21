@@ -1,0 +1,14 @@
+target/
+*/target/
+*.class
+.idea/
+.project
+.jupiter
+*.iml
+.svn/
+.checkstyle
+.settings
+.bin/
+*/bin/
+*/.sts4-cache/*.json
+./mvn/

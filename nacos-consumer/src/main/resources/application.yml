@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: dubbo-nacos-consumer
+  main:
+    allow-bean-definition-overriding: true
+
+dubbo:
+  scan:
+    # ÅäÖÃ Controller É¨ÃèÂ·¾¶
+    base-packages: com.yide.dubbo.nacos.consumer.controller
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.1.175:8848
+
+server:
+  port: 8083
+
+# ·şÎñ¼à¿Ø¼ì²é
+endpoints:
+  dubbo:
+    enabled: true
+management:
+  health:
+    dubbo:
+      status:
+        defaults: memory
+        extras: threadpool
+  endpoints:
+    web:
+      exposure:
+        include: "*"
