@@ -11,4 +11,3 @@ target/
 .bin/
 */bin/
 */.sts4-cache/*.json
-./mvn/

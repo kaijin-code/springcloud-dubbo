@@ -6,7 +6,6 @@ spring:
 
 dubbo:
   scan:
-    # 配置 Controller 扫描路径
     base-packages: com.yide.dubbo.nacos.consumer.controller
   protocol:
     name: dubbo
@@ -17,10 +16,10 @@ dubbo:
 server:
   port: 8083
 
-# 服务监控检查
 endpoints:
   dubbo:
     enabled: true
+
 management:
   health:
     dubbo:
