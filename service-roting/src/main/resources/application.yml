@@ -1,29 +1,2 @@
 server:
   port: 8004
-
-spring:
-  application:
-    name: sr-gateway
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: false
-      routes:
-
-
-
-
-dubbo:
-  protocol:
-    name: dubbo
-    # -1 代表自动分配端口
-    port: -1
-    # 配置高速序列化规则
-    serialization: kryo
-  registry:
-    # 服务注册地址，也就是 Nacos 的服务器地址
-    address: nacos://192.168.1.175:8848
-  provider:
-    # 配置负载均衡策略（轮询）
-    loadbalance: roundrobin

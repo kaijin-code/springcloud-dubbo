@@ -3,7 +3,7 @@ package com.yide.dubbo.nacos.provider.service;
 import com.yide.api.EchoService;
 import org.apache.dubbo.config.annotation.Service;
 
-@Service(version = "1.0.0")
+@Service
 public class EchoServiceImpl implements EchoService {
 
     @Override

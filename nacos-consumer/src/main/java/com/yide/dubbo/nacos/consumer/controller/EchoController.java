@@ -9,12 +9,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EchoController {
 
-    @Reference(version = "1.0.0")
+    @Reference
     private EchoService echoService;
 
-    @GetMapping("/echo/{string}")
+    @GetMapping("/pay/echo/{string}")
     public String echo(@PathVariable String string){
 
         return echoService.echo(string);
+    }
+
+    @GetMapping("/pay/balance/{id}")
+    public Long gateway(@PathVariable("id") String id){
+        return System.currentTimeMillis();
     }
 }
