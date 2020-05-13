@@ -1,4 +1,4 @@
-package com.yide.dubbo.nacos.consumer;
+package com.yide;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -6,10 +6,10 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 @SpringBootApplication
 @EnableHystrix
-public class NacosConsumerApplication {
+public class ProviderService2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(NacosConsumerApplication.class, args);
+        SpringApplication.run(ProviderService2Application.class, args);
     }
 
 }

@@ -52,6 +52,12 @@
             <version>1.0.6</version>
         </dependency>
 
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <version>1.4.4.RELEASE</version>
+        </dependency>-->
+
         <!-- 依赖接口模块，用于实现接口 -->
         <dependency>
             <groupId>com.yide</groupId>

@@ -4,15 +4,15 @@ spring:
   cloud:
     nacos:
       config:
-        server-addr: 192.168.1.175:8848
+        server-addr: localhost:8848
       discovery:
-        server-addr: 192.168.1.175:8848
+        server-addr: localhost:8848
     gateway:
       discovery:
         locator:
           enabled: true
       routes:
         - id: payment-router
-          uri: http://192.168.1.175:8083
+          uri: http://localhost:8083
           predicates:
             - Path=/pay/**

@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.yide</groupId>
-    <artifactId>nacos-consumer</artifactId>
-    <version>1.0.1</version>
-    <name>nacos-consumer</name>
-    <description>dubbo nacos project for Spring Boot</description>
+    <artifactId>demo</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>provider-service2</name>
+    <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -76,6 +76,7 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
     <build>
